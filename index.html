@@ -688,7 +688,14 @@ src="https://www.facebook.com/tr?id=2077427563137150&ev=PageView&noscript=1"
     .diferenciais { padding: 24px; gap: 24px; }
     .hero-badges { gap: 24px; }
   }
-.hero-right { background: #000; }  .hero-img { position: absolute; inset: 0; object-fit: contain; object-position: center; }  .hero-overlay { display: none; }  @media (max-width: 900px) {    .hero-right { height: auto; aspect-ratio: 2 / 3; }  }.hero { background: #000; } .hero-left { background: linear-gradient(110deg, #3D0A14 0%, #1C050A 45%, #000 100%); } .hero-title { color: #FAF6F1; } .hero-title em { color: #E8D5A3; } .hero-desc { color: #D9CDD0; } .hero .badge-num { color: #E8D5A3; } .hero .badge-txt { color: #D9CDD0; } .hero .btn-secondary { color: #E8D5A3; } .hero .btn-secondary:hover { color: #3D0A14; } .hero .btn-primary { background: #E8D5A3; color: #3D0A14; } .hero .btn-primary:hover { background: #C9A96E; } @media (max-width: 900px) { .hero-left { background: linear-gradient(160deg, #3D0A14 0%, #1C050A 55%, #000 100%); } } .sobre { background: #000; } .sobre-img { min-height: 600px; background: #000; } .sobre-img img { position: absolute; inset: 0; object-fit: contain; object-position: center; } .sobre-content { background: linear-gradient(90deg, #000 0%, #1C050A 35%, #3D0A14 100%); } @media (max-width: 900px) { .sobre-img { min-height: 0; aspect-ratio: 2 / 3; } .sobre-content { background: linear-gradient(180deg, #000, #3D0A14); } } </style>
+.hero-right { background: #000; }  .hero-img { position: absolute; inset: 0; object-fit: contain; object-position: center; }  .hero-overlay { display: none; }  @media (max-width: 900px) {    .hero-right { height: auto; aspect-ratio: 2 / 3; }  }.hero { background: #000; } .hero-left { background: linear-gradient(110deg, #3D0A14 0%, #1C050A 45%, #000 100%); } .hero-title { color: #FAF6F1; } .hero-title em { color: #E8D5A3; } .hero-desc { color: #D9CDD0; } .hero .badge-num { color: #E8D5A3; } .hero .badge-txt { color: #D9CDD0; } .hero .btn-secondary { color: #E8D5A3; } .hero .btn-secondary:hover { color: #3D0A14; } .hero .btn-primary { background: #E8D5A3; color: #3D0A14; } .hero .btn-primary:hover { background: #C9A96E; } @media (max-width: 900px) { .hero-left { background: linear-gradient(160deg, #3D0A14 0%, #1C050A 55%, #000 100%); } } .sobre { background: #000; } .sobre-img { min-height: 600px; background: #000; } .sobre-img img { position: absolute; inset: 0; object-fit: contain; object-position: center; } .sobre-content { background: linear-gradient(90deg, #000 0%, #1C050A 35%, #3D0A14 100%); } @media (max-width: 900px) { .sobre-img { min-height: 0; aspect-ratio: 2 / 3; } .sobre-content { background: linear-gradient(180deg, #000, #3D0A14); } } /* Kits */
+#kits { scroll-margin-top: 90px; padding-top: 48px; }
+.grid-kits { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.grid-kits .card { display: flex; flex-direction: column; }
+.grid-kits .card-body { display: flex; flex-direction: column; flex: 1; }
+.grid-kits .card-footer { margin-top: auto; }
+@media (max-width: 900px) { .grid-kits { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
 
@@ -700,6 +707,7 @@ src="https://www.facebook.com/tr?id=2077427563137150&ev=PageView&noscript=1"
   </div>
   <div class="nav-links">
     <a href="#produtos">Produtos</a>
+    <a href="#kits">Kits</a>
     <a href="#sobre">Sobre</a>
     <a href="#contato" class="nav-cta">Comprar</a>
   </div>
@@ -876,6 +884,51 @@ src="https://www.facebook.com/tr?id=2077427563137150&ev=PageView&noscript=1"
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- KITS MAYCE GUTIERRES -->
+<section class="produtos" id="kits" aria-labelledby="kits-title">
+  <div class="produtos-header">
+    <div><p class="section-label">Sua rotina de beleza</p><h2 class="section-title" id="kits-title">Kits <em>Mayce Gutierres</em></h2></div>
+  </div>
+  <div class="grid-produtos grid-kits">
+    <article class="card" id="kit-glow" data-product-code="R2D83X">
+      <div class="card-img-wrap"><img src="kit-glow.png" alt="Kit Glow Mayce Gutierres" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-cat">Kit de Beleza</div>
+        <h3 class="card-name">Kit Glow</h3>
+        <p class="card-desc">Primer Glow, Gloss Labial, Pó Mineral e Blush Mineral. Uma unidade de cada produto para uma maquiagem luminosa e completa.</p>
+        <div class="card-footer">
+          <div class="card-price"><small>R$</small> 273,00</div>
+          <a href="https://checkout.payt.com.br/2a62612eaa64974b88ea00858edfb121" target="_blank" rel="noopener noreferrer" class="card-btn" aria-label="Comprar Kit Glow">Comprar</a>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="kit-luxo" data-product-code="RV3828">
+      <div class="card-img-wrap"><img src="kit-luxo.png" alt="Kit Luxo Mayce Gutierres" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-cat">Kit de Beleza</div>
+        <h3 class="card-name">Kit Luxo</h3>
+        <p class="card-desc">Primer Glow, Gloss Labial, Pó Mineral, Blush Mineral e Toalha Demaquilante. Uma unidade de cada um dos cinco itens.</p>
+        <div class="card-footer">
+          <div class="card-price"><small>R$</small> 265,00</div>
+          <a href="https://checkout.payt.com.br/7b1de496ec9380c2611cd71d7404befb" target="_blank" rel="noopener noreferrer" class="card-btn" aria-label="Comprar Kit Luxo">Comprar</a>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="kit-pele-de-seda" data-product-code="45EP65">
+      <div class="card-img-wrap"><img src="kit-pele-de-seda.png" alt="Kit Pele de Seda Mayce Gutierres" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-cat">Kit de Beleza</div>
+        <h3 class="card-name">Kit Pele de Seda</h3>
+        <p class="card-desc">Primer Glow, Hidratante Pré-Make e Pó Mineral. Uma unidade de cada produto para preparar e finalizar a pele com leveza.</p>
+        <div class="card-footer">
+          <div class="card-price"><small>R$</small> 234,00</div>
+          <a href="https://checkout.payt.com.br/b98596cd5816ae296f55956e491baf5d" target="_blank" rel="noopener noreferrer" class="card-btn" aria-label="Comprar Kit Pele de Seda">Comprar</a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
